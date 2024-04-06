@@ -1,5 +1,3 @@
-provide-module vertical-selection %{
-
 # copy the current selection upwards/downwards to all lines matching the current selection
 
 define-command vertical-selection-up -docstring "
@@ -76,7 +74,3 @@ define-command -hidden vertical-selection-impl -params 2 %{
         exec '<a-s>1s<ret>'
     }
 }
-
-}
-
-require-module vertical-selection
